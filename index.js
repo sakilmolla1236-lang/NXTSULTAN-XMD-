@@ -1,3 +1,9 @@
+const express = require('express');
+const app = express();
+const PORT = process.env.PORT || 10000;
+app.get('/', (req, res) => res.send('NXTSULTAN-XMD IS LIVE - BOT IS RUNNING'));
+app.listen(PORT, () => console.log('Web server running on ' + PORT));
+
 const { default: makeWASocket, useMultiFileAuthState, Browsers, DisconnectReason, downloadMediaMessage } = require("@whiskeysockets/baileys")
 const P = require("pino")
 const fs = require("fs")
